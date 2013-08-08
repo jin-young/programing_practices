@@ -13,11 +13,9 @@ end
 
 puts 'tree building is done'
 
-# assume no duplicated value, input values exist in tree
+# assume no duplicated value, input values might not exist in tree
 # assume tree is not binary search tree and node does not have a link to its parent
 
 def find_lowest_common_ancestor(node, val1, val2)
   return [node, true] if node.value == val1 and node.value == val2
-
-
 end
